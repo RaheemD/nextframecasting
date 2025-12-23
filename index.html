@@ -41,6 +41,7 @@
     <form
       name="actor-submissions"
       method="POST"
+      enctype="multipart/form-data"
       data-netlify="true"
       netlify-honeypot="bot-field"
       hidden
@@ -56,7 +57,10 @@
       <input name="email" />
       <input name="languages" />
       <select name="experienceLevel"></select>
+      <input name="photos" type="file" multiple />
+      <input name="videoLink" />
       <textarea name="message"></textarea>
     </form>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

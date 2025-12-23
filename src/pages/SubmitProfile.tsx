@@ -303,7 +303,7 @@ const SubmitProfile = () => {
                     id="languages"
                     name="languages"
                     type="text"
-                    placeholder="e.g., English, Hindi, Tamil"
+                    placeholder="e.g., English, Hindi, Marathi"
                   />
                 </div>
 

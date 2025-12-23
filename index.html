@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Frame Casting</title>
+    <meta
+      name="description"
+      content="Next Frame Casting — casting support, talent coordination, and profile submissions."
+    />
+    <meta name="author" content="Next Frame Casting" />
+
+    <meta property="og:title" content="Next Frame Casting" />
+    <meta
+      property="og:description"
+      content="Casting support, talent coordination, and profile submissions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/placeholder.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/placeholder.svg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <form
+      name="contact-form"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contact-form" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <form
+      name="actor-submissions"
+      method="POST"
+      enctype="multipart/form-data"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="actor-submissions" />
+      <input name="bot-field" />
+      <input name="fullName" />
+      <input name="age" />
+      <input name="gender" />
+      <input name="height" />
+      <input name="city" />
+      <input name="phone" />
+      <input name="email" />
+      <input name="languages" />
+      <select name="experienceLevel"></select>
+      <input name="photos" type="file" multiple />
+      <input name="videoLink" />
+      <textarea name="message"></textarea>
+    </form>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
